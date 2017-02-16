@@ -12,13 +12,18 @@ def make_chocolate():
     mix()
     print ("Drink chocolate")
 
-wake_up = input("Enter you name: ")
+stop = False
 
-if (wake_up == "zoo"):
-    make_chocolate()
+while (stop != True):
 
-elif wake_up == "ahh":
-    make_coffee()
+    wake_up = input("Enter you name: ")
 
-else:
-    print ("Please drink waater")
+    if (wake_up == "zoo"):
+        make_chocolate()
+
+    elif wake_up == "ahh":
+        make_coffee()
+
+    else:
+        print ("Please drink waater")
+        stop = True
